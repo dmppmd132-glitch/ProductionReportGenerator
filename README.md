@@ -1,6 +1,6 @@
-StripScope
+ProductionReportGenerator
 
-StripScope is a Windows desktop tool that turns AVI inspection CSV files into a one-page production report (PDF and Excel). It works per strip and shows how many strips were inspected, how many defects were found, and which defect types are most common.
+ProductionReportGenerator is a Windows desktop tool that turns AVI inspection CSV files into a one-page production report (PDF and Excel). It works per strip and shows how many strips were inspected, how many defects were found, and which defect types are most common.
 
 What the report shows
 
@@ -18,7 +18,7 @@ Optionally select the folder with the AI defect files and enter a filename patte
 Choose an output folder and click Generate to get the PDF, Excel, and chart image.
 
 
-powershell 
+use powershell to build
 
 cd "C:\Users\user\Downloads\PulseFlow-Windows-Builder-v1.4"
 
