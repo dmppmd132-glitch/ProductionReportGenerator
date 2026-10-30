@@ -16,3 +16,21 @@ How to use it
 Select the folder that contains the inspection summary CSV files.
 Optionally select the folder with the AI defect files and enter a filename pattern, such as AI*.csv;*.ai. Strips are matched by the last four digits of Step_Code, which is the Strip ID.
 Choose an output folder and click Generate to get the PDF, Excel, and chart image.
+
+
+powershell 
+
+cd "C:\Users\user\Downloads\PulseFlow-Windows-Builder-v1.4"
+
+
+py -3.12 -m venv .venv
+
+
+.\.venv\Scripts\Activate.ps1
+
+
+python -m pip install --upgrade pip
+python -m pip install matplotlib openpyxl pillow pyinstaller
+
+
+python -m PyInstaller --noconfirm --clean ProductionReportGenerator.spec
