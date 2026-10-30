@@ -20,17 +20,12 @@ Choose an output folder and click Generate to get the PDF, Excel, and chart imag
 
 use powershell to build
 
-cd "C:\Users\user\Downloads\PulseFlow-Windows-Builder-v1.4"
-
+cd "C:\Users\user\Downloads\PulseFlow-Windows-Builder-v1.7"
 
 py -3.12 -m venv .venv
-
-
 .\.venv\Scripts\Activate.ps1
-
 
 python -m pip install --upgrade pip
 python -m pip install matplotlib openpyxl pillow pyinstaller
 
-
-python -m PyInstaller --noconfirm --clean ProductionReportGenerator.spec
+python -m PyInstaller --noconfirm --clean PulseFlow.spec
